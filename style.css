@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
 *{
        margin: 15;
        padding: 20;
@@ -12,16 +14,12 @@
        padding: 24px 0;
        font-size: 30px;
    }
-   
-   .cabecalho-imagem{
-       width: 50%;
+   .cabeçalho-item{
+    font-family: kumar one, Verdana, Geneva, Tahoma, sans-serif;
+    color: #AD5300;
+
    }
-   
-   .cabecalho-lista-item{
-       display: inline-block;
-       margin: 0 26px;
-       font-size: 30px;
-   }
+
    .body2{
        color: rgb(0, 0, 0);
        display: flex;
@@ -50,7 +48,7 @@
           top: 5%;
           left: 92%;
           transform: translate(-95%, -8%);
-          background: #e7560d;
+          background: #e99534;
           height: 35px;
           padding: 7px;
           border-radius: 50px;
@@ -141,13 +139,13 @@
      font-size: 16px;
  }
  .nav a:hover {
- background-color: #e7a918;
+ background-color: #e4a92b;
  }
  .sidebar {
      font-family: Arial, Helvetica, sans-serif;
      width: 200px;
      height: 500px;
-     background-color: #e9820b;
+     background-color: #daa542;
      padding: 20px;
      box-sizing: border-box;
  }
@@ -167,3 +165,21 @@
   padding: 0;
   font-family: Arial, sans-serif;
  }
+ .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* cria três colunas de tamanho igual */
+    gap: 10px; /* espaço entre as imagens */
+}
+
+.image-container figure {
+    text-align: center; /* centra a legenda abaixo da imagem */
+}
+
+.image-container img {
+    width: 60%; /* ajusta conforme necessário */
+    height: auto; /* mantém a proporção da imagem */
+}
+
+.image-container figcaption {
+    margin-top: 8px; /* espaço entre a imagem e a legenda */
+}
